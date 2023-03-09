@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/captura.css">
+	<link rel="icon" href="/img/imss.ico">
+	<title>Captura de Turnos</title>
+</head>
+<body>
+<div class="col-lg-2">
+	<img src="img/imss.png" width="100%"></div>
+<div class="caja-principal col-lg-8">
+	<header>
+		
+		<h1>Instituto Mexicano del Seguro Social</h1><br>
+		<h2>Unidad de Medicina Familiar 163</h2><br>
+		<h3>Unifila</h3><br>
+		<h3>Captura de Turnos UMF</h3><br><br>
+
+	</header>
+
+	<section>
+		
+		<form>
+
+		<p>
+			<div class="form-group">
+				<label for="nombre">Ficha</label>
+				<input type="text" required name="nombre" size="5px" style="height:35px" class="form-control" id="paciente" onkeyup = "this.value = this.value.toUpperCase();" value="">
+			</div>
+		</p>
+
+		<p>
+			
+		</p><br><br>
+		<div class="form-group">
+			<label for ="horario" name="horario"></label>
+				<select name="horario" id="horario" class="form-control" hidden style="height:35px">
+					
+				</select>
+		</div>
+	
+	</p>
+		<p>
+			<div class="form-group">
+				<button id="send" style="height:35px;width:60px">Enviar</button>
+			</div>
+		</p>
+
+	</form>
+	
+</section>
+
+</div>
+<div class="col-lg-2 ">
+	<img src="img/umf163.png" width="80%">
+</div>
+<br>
+<br>
+<footer class="footer">
+                
+                <marquee class="noticias col-lg-10">El objetivo de esta iniciativa es disminuir los tiempos de espera para consulta de los pacientes que acuden sin cita a las Unidades de Medicina Familiar.
+				Esta iniciativa ha logrado disminuir los tiempos de espera de los pacientes sin cita optimizando los espacios disponibles de la agenda de los médicos familiares, ha logrado disminuir los tiempos de espera de los pacientes sin cita optimizando los espacios disponibles de la agenda de los médicos familiares.
+
+				Antes, los pacientes sin cita esperaban varias horas para recibir una consulta médica. Con Unifila, a los pacientes sin cita se le ofrecen las siguientes opciones:
+
+				Programar una cita con su médico familiar el mismo día, en caso de haber disponibilidad.
+				Programar una cita con su médico familiar en la fecha más próxima.
+				Pasar al módulo de UNIFILA para obtener una cita en los consultorios con espacios disponibles.</marquee>
+
+</footer>
+
+	<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+	<script src="chat.js" charset="utf-8"></script>
+	
+</body>
+
+
+</html>

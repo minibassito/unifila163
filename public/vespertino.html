@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/captura.css">
+	<link rel="icon" href="/img/imss.ico">
+	<title>Captura de Turnos</title>
+</head>
+<body>
+<div class="col-lg-2">
+	<img src="/img/imss.png" width="100%"></div>
+<div class="caja-principal col-lg-8">
+	<header>
+		
+		<h1>Instituto Mexicano del Seguro Social</h1>
+		<h2>Unidad de Medicina Familiar 163</h2>
+		<h3>Unifila</h3>
+		<h3>Captura de Turnos UMF</h3>
+
+	</header>
+
+	<section>
+		
+		<form>
+
+		<p>
+			<div class="form-group">
+				<label for="nombre">Nombre del Paciente </label>
+				<input type="text" required name="nombre" size="60px" style="height:35px" class="form-control" id="paciente" onkeyup = "this.value = this.value.toUpperCase();" value="">
+			</div>
+		</p>
+
+		<p>
+			<div class="form-group">
+				<label for ="consultorio" name="consultorio"> Consultorio </label>
+					<select name="consultorio" id="consultorio" class="form-control" style="height:35px">
+						<option></option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+					</select>
+			</div>
+		</p><br><br>
+        <div class="form-group">
+			<label for ="horario" name="horario"> Horario Vespertino</label>
+				<select name="horario" required id="horario" class="form-control" style="height:35px">
+					<option></option>
+					<option value="14:00">14:00</option>
+					<option value="14:15">14:15</option>
+					<option value="14:30">14:30</option>
+					<option value="14:45">14:45</option>
+					<option value="15:00">15:00</option>
+					<option value="15:15">15:15</option>
+					<option value="15:30">15:30</option>
+					<option value="15:45">15:45</option>
+					<option value="16:00">16:00</option>
+					<option value="16:15">16:15</option>
+					<option value="16:30">16:30</option>
+					<option value="16:45">16:45</option>
+					<option value="17:00">17:00</option>
+					<option value="17:15">17:15</option>
+					<option value="17:30">17:30</option>
+					<option value="17:45">17:45</option>
+					<option value="18:00">18:00</option>
+					<option value="18:15">18:15</option>
+					<option value="18:30">18:30</option>
+					<option value="18:45">18:45</option>
+					<option value="19:00">19:00</option>
+					<option value="19:15">19:15</option>
+					<option value="19:30">19:30</option>
+					<option value="19:45">19:45</option>
+				</select>
+		</div>
+	
+	</p>
+		<p>
+			<div class="form-group">
+				<button id="send" style="height:35px;width:60px">Enviar</button>
+			</div>
+		</p>
+
+	</form>
+	
+</section>
+
+</div>
+<div class="col-lg-2 ">
+	<img src="img/umf163.png" width="80%">
+</div>
+
+<footer class="footer">
+                
+                <marquee class="noticias col-lg-10">El objetivo de esta iniciativa es disminuir los tiempos de espera para consulta de los pacientes que acuden sin cita a las Unidades de Medicina Familiar.
+				Esta iniciativa ha logrado disminuir los tiempos de espera de los pacientes sin cita optimizando los espacios disponibles de la agenda de los médicos familiares, ha logrado disminuir los tiempos de espera de los pacientes sin cita optimizando los espacios disponibles de la agenda de los médicos familiares.
+
+				Antes, los pacientes sin cita esperaban varias horas para recibir una consulta médica. Con Unifila, a los pacientes sin cita se le ofrecen las siguientes opciones:
+
+				Programar una cita con su médico familiar el mismo día, en caso de haber disponibilidad.
+				Programar una cita con su médico familiar en la fecha más próxima.
+				Pasar al módulo de UNIFILA para obtener una cita en los consultorios con espacios disponibles.</marquee>
+
+</footer>
+
+	<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+	<script src="chat.js" charset="utf-8"></script>
+	
+</body>
+
+
+</html>

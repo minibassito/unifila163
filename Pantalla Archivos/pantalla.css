@@ -1,0 +1,89 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background-color: rgba(74, 136, 207, 0.075);
+}
+.contenedor{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+.fila{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	clear: both;
+	display: table;
+}
+
+[class*="col-"]{
+	float: left;
+	border: none;
+	padding: 20px;
+}
+.marco-tablaTurnos{
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 5px;
+	text-align:center;
+	width: 100%;
+	min-width: 300px;
+	height: 40%;
+	min-height: 60px;
+}
+.contenedor-tablaTurnos{
+	display: flex;
+	height: 300px;	
+	margin: 10px;
+}
+.columna-tablaTurnos{
+	flex-basis: 50%;
+	height: auto;
+}
+	
+.tabla-turnosArriba, .tabla-turnosAbajo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tabla-turnosArriba{
+	font-size: 650%;
+	flex-basis: 70%;
+	color:rgb(19, 52, 78);
+	height: 70px;
+}
+.tabla-turnosAbajo1{
+	color: black;
+	font-size: 1000%;
+	flex-basis: 30%;
+	height: 150px;
+	line-height: 130px;
+}
+.tabla-turnosAbajo2{
+	color: black;
+	font-size: 1000%;
+	flex-basis: 30%;
+	height: 150px;
+	line-height: 130px;
+}
+.logo-umf{
+	margin: 20px;
+}
+.logo-imss{
+	margin-top: 25px;
+}
+.unifila{
+	margin-top: 90px;
+	font-size: 170px;
+	color: rgb(19, 52, 78);
+	flex-direction: column-reverse;
+}
+#video{
+	margin-left: 200px;
+}

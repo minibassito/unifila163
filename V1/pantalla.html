@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pantalla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+	<link rel="icon" href="/img/imss.ico">
+    <link rel="stylesheet" href="css/pantalla.css">   
+</head>
+
+<body>
+    <div id="chat-container">
+       
+    </div>
+
+    <div class="marco-tablaTurnos">
+
+			<div class="contenedor-tablaTurnos">
+			<div class="columna-tablaTurnos">
+			<div class="tabla-turnosArriba">Paciente</div>
+			<div class="tabla-turnosAbajo1" id="pantalla"><p></p></div>
+
+		</div>
+			<div class="columna-tablaTurnos">
+			<div class="tabla-turnosArriba">Consultorio</div>  
+			<div class="tabla-turnosAbajo2" id="action"><p></p></div>
+			<div class="tabla-turnosArribaHorario">Horario</div>  
+			<div class="tabla-turnosAbajoHorario" id="horario"><p></p></div>
+		</div>
+		</div>
+		</div>
+
+    <section>
+
+		<div class="col-lg-4">
+			<img class="logo-umf" src="img/umf163.png" width="200px">
+		</div>
+		<div class="unifila">
+			<div class="col-lg-4">
+				<h1>Unifila</h1>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<img class="logo-imss" src="img/imss.png" width="300px">
+		</div>
+		
+	</section>
+
+	<footer class="footer">
+                
+                <marquee class="noticias">El objetivo de esta iniciativa es disminuir los tiempos de espera para consulta de los pacientes que acuden sin cita a las Unidades de Medicina Familiar.
+				Esta iniciativa ha logrado disminuir los tiempos de espera de los pacientes sin cita optimizando los espacios disponibles de la agenda de los médicos familiares, ha logrado disminuir los tiempos de espera de los pacientes sin cita optimizando los espacios disponibles de la agenda de los médicos familiares.
+
+				Antes, los pacientes sin cita esperaban varias horas para recibir una consulta médica. Con Unifila, a los pacientes sin cita se le ofrecen las siguientes opciones:
+
+				Programar una cita con su médico familiar el mismo día, en caso de haber disponibilidad.
+				Programar una cita con su médico familiar en la fecha más próxima.
+				Pasar al módulo de UNIFILA para obtener una cita en los consultorios con espacios disponibles.</marquee>
+
+</footer>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="pantalla.js" charset="utf-8"></script>
+</body>
+</html>
